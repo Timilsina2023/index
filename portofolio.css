@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+  font-family: "Lexend Mega", sans-serif;
+  color: black;
+  background-color: white;
+  font-size: 22px;
+  text-align: center;
+
+}
+header, h1 {
+color: red;
+text-align: center;
+font-size: 40px;
+}
+nav {
+display: flex;
+
+ margin: 0 10%;
+}
+li {
+display: inline-block;
+padding: 10px;
+}
+
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Aboutus {
+display: flex;
+height: 400px;
+background-color: blue;
+padding-top: 50px;
+}
+
+  
+
+h4 {
+  display: block;
+   margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  background-color: white;
+  margin-left: 200px;
+}
+.skillcontainer {
+  padding: 15px;
+  background-color: bisque;
+}
+
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+  
+}
+.hundred {
+    width: 265px;
+}
+.fifty {
+    width: 125px;
+}
+.t5 {
+    width: 75px;
+    background-color: green;
+}
+
+
+
+h5 {
+text-align: center;
+font-weight: thin;
+}
+p {
+text-align: left;
+margin-left: 10px;
+color:#ff004f;
+
+}
+h2 {
+  font-size: 20px;
+  text-align: left;
+  color: blue;
+  margin-left: 10px;
+}
+#Project {
+  padding: 50px 0;
+  background-color: azure;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+
+#contact {
+     padding: 30px;
+     background-color: black;
+     
+}
+
+h3 {
+  text-align: center;
+  color: blue;
+  
+}
+
+
+.contact, p {
+ text-align: center;
+  font-size: 25px;
+  color:#ff004f;
+
+}
+
+/*.social-icons {
+   margin-top: 30px;
+   
+}*/
+.btn.btn2 {
+  display:inline-block;
+  background: #ff004f;
+}
+/*.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  color: blue;
+  display: inline-block;
+}*/
+/*.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}*/
+.contact-right form{
+  width: 60%;
+}
+
+
+/* form input, form textarea {
+  width: 40%;
+  border: 0;
+  outline: none;
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+}*/
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer {
+  padding: 2px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+h6 {
+ color: blue;
+
+ }
+ #msg {
+  color: blue;
+  margin-top: 10px;
+  display: block;
+ }
+
+
+
+
+
+

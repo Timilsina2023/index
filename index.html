@@ -1,0 +1,114 @@
+<!doctype html>
+  <head><title>Portofolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="portofolio.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="header">
+  <h1>Jeevan</h1>
+  <div class="navbar">
+    <ul>
+      
+       <li><a href="#Aboutus">About us</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+</div>
+<div class="main">
+ <div class="Aboutus">
+  <div class="content">
+    <div class="col-sm-6">
+      
+        
+         <img src="c:\Users\j_tim\OneDrive\Desktop\My Portofolio\New folder\FB_IMG_1705422778737.jpg" width="300" >
+     
+      
+      <p>Welcome to my personal Portfolio website.My name is Jeevan Timilsina.I am a Full stack engineer, and i'm very passionate and dedicated to my work.I have acquired 
+        the skills and knowledge necessary to make your project a success.</p>
+    </div>
+</div></div>
+<div id="Skills">
+  <h2>Skill-List</h2>
+    <div class="skillcontainer">
+      <div class="skillItem">HTML:<div class="skill"></div></div>
+      <div class="skillItem">CSS:<div class="skill"></div></div>
+      <div class="skillItem">JavaScript:<div class="skill t5"></div></div>
+      <div class="skillItem">Php:<div class="skill t5"></div></div>
+      <div class="skillItem">Python:<div class="skill"></div></div>
+          </div>
+          
+    </div>
+    </div>
+    <div id="Project">
+      <h2>Project-List</h2>
+            <div class="work-list">
+                <div class="work">
+                <img src="C:\Users\j_tim\OneDrive\Desktop\My Portofolio\New folder\mission.jpg">Our Mission</div>
+                <div class="work">
+                <img src="C:\Users\j_tim\OneDrive\Desktop\My Portofolio\New folder\Piano's.png">Piano's</div>
+                <div class="work">
+                    <img src="C:\Users\j_tim\OneDrive\Desktop\My Portofolio\New folder\Dasmoto.png"></div> 
+              </div>
+                 </div>
+          </div>
+          <div id="contact">
+            <div class="container">
+              
+                
+                 <h3>Contact me:</h3>
+                  <p>timilsinaj@gmail.com</p>
+                  <p>ph no:07859790490</p>
+                </div>
+                 
+                  
+                  <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                  </div>
+                  </div>
+                
+                  <div class="footer">
+            
+                    <h6>copyright©</h6>
+                    </div>
+                  
+                  <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwUpejBRxNbtrGVnp6tX-gwsUrPtf2jIYbYLMzmKd71H0lwW6Lw4jQvuipm8o9dnOG/exec'
+                      const form = document.forms['submit-to-google-sheet']
+                      const msg = document.getElementById("msg")
+
+                      form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => {
+                         msg.innerHTML = "Message sent successfully"
+                         setTimeout(function(){
+                          msg.innerHTML = ""
+                        },5000)
+                         form.reset()
+                        })
+                         .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
+                
+              
+
+              
+        
+           
+          
+      
+        
+         
+
+
+    </body>
+    </html>
